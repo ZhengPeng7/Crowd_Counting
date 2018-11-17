@@ -42,3 +42,8 @@
 - Tricks in the transfer learning between different dataset:
 
   ​	If the target domain only contains a few training samples, we may freeze the first several layers in each column.
+
+- Data augmentation:
+
+  1. In the training set, we cropped 9 patches from each image at different locations, and each patch is 1/4 size of the original image. 
+  2. In part_A of ShanghaiTech dataset, we use the geometry-adaptive kernels to generate the density map because of it high crowd density. While in part_B, which has a relatively sparse density, we use the same spread in Gaussian kernel to generate the density maps.
